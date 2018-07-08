@@ -10,21 +10,28 @@ const http = new EasyHTTP;
 //   }
 // });
 
-// Get Users
-http.get('https://jsonplaceholder.typicode.com/users');
-
 // http.get('https://jsonplaceholder.typicode.com/posts/1', function(err, res) {
-//   if (err) {
-//     console.log(err);
-//   } else {
-//     console.log(res);
-//   }
-// });
+  //   if (err) {
+    //     console.log(err);
+    //   } else {
+      //     console.log(res);
+      //   }
+      // });
+
+// Get Users
+// http.get('https://jsonplaceholder.typicode.com/users')
+//   .then(data => console.log(data))
+//   .catch(err => console.log(err));
 
 // Create Data
+// const data = {
+//   title: 'Custom Post',
+//   body: 'This is a custom post'
+// };
 const data = {
-  title: 'Custom Post',
-  body: 'This is a custom post'
+  name: 'John Doe',
+  username: 'johnDoe',
+  email: 'jdoe@gmail.com'
 };
 
 // Post Request
@@ -35,6 +42,11 @@ const data = {
 //       console.log(res);
 //     }
 // });
+
+// Post User
+http.post('https://jsonplaceholder.typicode.com/users', data)
+  .then(data => console.log(data))
+  .catch(err => console.log(err));
 
 // Put Request
 // http.put('https://jsonplaceholder.typicode.com/posts/1', data, function(err, res) {
