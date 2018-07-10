@@ -44,9 +44,9 @@ const data = {
 // });
 
 // Post User
-http.post('https://jsonplaceholder.typicode.com/users', data)
-  .then(data => console.log(data))
-  .catch(err => console.log(err));
+// http.post('https://jsonplaceholder.typicode.com/users', data)
+//   .then(data => console.log(data))
+//   .catch(err => console.log(err));
 
 // Put Request
 // http.put('https://jsonplaceholder.typicode.com/posts/1', data, function(err, res) {
@@ -58,9 +58,9 @@ http.post('https://jsonplaceholder.typicode.com/users', data)
 // });
 
 // Put request
-// http.put('https://jsonplaceholder.typicode.com/users/2', data)
-//   .then(data => console.log(data))
-//   .catch(err => console.log(err));
+http.put('https://jsonplaceholder.typicode.com/users/2', data)
+  .then(data => console.log(data))
+  .catch(err => console.log(err));
 
 // Delete Request 
 // http.delete('https://jsonplaceholder.typicode.com/posts/1', function(err, res) {
