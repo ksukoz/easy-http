@@ -19,9 +19,9 @@ const http = new EasyHTTP;
       // });
 
 // Get Users
-http.get('https://jsonplaceholder.typicode.com/users')
-  .then(data => console.log(data))
-  .catch(err => console.log(err));
+// http.get('https://jsonplaceholder.typicode.com/users')
+//   .then(data => console.log(data))
+//   .catch(err => console.log(err));
 
 // Create Data
 // const data = {
@@ -44,9 +44,9 @@ const data = {
 // });
 
 // Post User
-// http.post('https://jsonplaceholder.typicode.com/users', data)
-//   .then(data => console.log(data))
-//   .catch(err => console.log(err));
+http.post('https://jsonplaceholder.typicode.com/users', data)
+  .then(data => console.log(data))
+  .catch(err => console.log(err));
 
 // Put Request
 // http.put('https://jsonplaceholder.typicode.com/posts/1', data, function(err, res) {
