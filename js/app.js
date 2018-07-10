@@ -58,9 +58,9 @@ const data = {
 // });
 
 // Put request
-http.put('https://jsonplaceholder.typicode.com/users/2', data)
-  .then(data => console.log(data))
-  .catch(err => console.log(err));
+// http.put('https://jsonplaceholder.typicode.com/users/2', data)
+//   .then(data => console.log(data))
+//   .catch(err => console.log(err));
 
 // Delete Request 
 // http.delete('https://jsonplaceholder.typicode.com/posts/1', function(err, res) {
@@ -72,6 +72,6 @@ http.put('https://jsonplaceholder.typicode.com/users/2', data)
 // });
 
 // Delete request
-// http.delete('https://jsonplaceholder.typicode.com/users/2')
-//   .then(data => console.log(data))
-//   .catch(err => console.log(err));
+http.delete('https://jsonplaceholder.typicode.com/users/2')
+  .then(data => console.log(data))
+  .catch(err => console.log(err));
